@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # todolist-v1
 A simple to-do list web app made using node. 
 =======
@@ -92,3 +93,7 @@ This list is completely and totally created by and for the public. I have not an
 
 Welcome to Node.js, and be sure to ask questions!! Have fun :-D
 >>>>>>> 7c9cfe60d44c82f9d22a3d5fec131ed0d4635fa1
+=======
+# todo-list-v1
+A simple to-do-list organizer web app made with node.
+>>>>>>> acbd04a8c340788c695b048100dabeb971625353
