@@ -1,22 +1,36 @@
+<!-- ejs tags must enclose each line with javascript code -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To Do List</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <h1><%= day %> </h1>
 
-    <ul>
-        <% for( let index = 0; index < newListItems.length; index++ ) { %>
-        <li><%= newListItems[index] %> </li>
+    <div class="box" id="heading">
+        <h1><%= day %> </h1> <!-- ejs output tag-->
+    </div>
+
+    <div class="box">
+        <!-- ejs iteration tag -->
+        <!-- for loop iterates and renders a new list item for each new iteration  -->
+        <% for( let index = 0; index < newListItems.length; index++ ) { %>  
+            <div class="item">
+                <input type="checkbox">
+                <p><%= newListItems[index] %> </p>
+            </div>
         <% } %>
-    </ul>
+    
 
-    <form class="" action="/" method="post">
-        <input type="text" name="newItem" id="">
-        <button type="submit">Add</button>
-    </form>
+        <form class="item" action="/" method="post">
+            <!-- newItem is the new list item being added on each iteration, passed onto as 'newListItems' over from 'app.js' -->
+            <input type="text" name="newItem" placeholder="New Item" autocomplete="off">
+            <button type="submit">+</button>
+        </form>
+    </div>  
 </body>
 </html>
+
